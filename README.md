@@ -2,16 +2,16 @@
 
 A full-stack web application for computing molecular ground state energies using quantum computing methods. Built with React + TypeScript frontend and Flask backend, leveraging quantum algorithms (VQE and SQD) for quantum chemistry simulations.
 
-## 🎯 Overview
+## Overview
 
-This application enables researchers and students to:
-- Build molecular structures using an interactive interface
+This application enables:
+- Building molecular structures using an interactive interface
 - Run quantum chemistry simulations using VQE (Variational Quantum Eigensolver) or SQD (Sample-based Quantum Diagonalization)
 - Visualize energy landscapes and simulation results
 - Calculate adsorption energies for molecular interactions
 - Track job status in real-time with WebSocket updates
 
-## 🏗️ Architecture
+## Architecture
 
 ### Backend (Python/Flask)
 - **API Framework**: Flask with Flask-RESTX for RESTful API
@@ -33,7 +33,7 @@ This application enables researchers and students to:
 - **Build Tool**: Vite
 - **Icons**: Lucide React
 
-## 📋 Features
+## Features
 
 ### Molecule Builder
 - Interactive atom input system
@@ -64,7 +64,7 @@ This application enables researchers and students to:
 - Job status tracking
 - Historical results viewing
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -153,7 +153,7 @@ npm run dev
 
 Frontend will be available at: `http://localhost:5173`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ElectyrolyisWebApp/
@@ -200,7 +200,7 @@ ElectyrolyisWebApp/
 └── pyproject.toml            # Python package configuration
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Backend Environment Variables (.env)
 ```env
@@ -218,7 +218,7 @@ IBM_QUANTUM_API_KEY=your-ibm-api-key  # Optional, for hardware access
 VITE_API_URL=http://localhost:5000/api/v1
 ```
 
-## 🧪 Running Tests
+## Running Tests
 
 ### Backend Tests
 ```bash
@@ -231,13 +231,13 @@ pytest
 pytest quantum_chemistry/tests/
 ```
 
-## 📚 API Documentation
+## API Documentation
 
 Once the backend is running, interactive API documentation is available at:
 - Swagger UI: `http://localhost:5000/api/v1/doc`
 - OpenAPI Spec: `http://localhost:5000/api/v1/swagger.json`
 
-## 🔬 Key API Endpoints
+## Key API Endpoints
 
 - `POST /api/v1/molecules/validate` - Validate molecular structure
 - `POST /api/v1/simulation/start` - Start new simulation
@@ -245,7 +245,7 @@ Once the backend is running, interactive API documentation is available at:
 - `GET /api/v1/simulation/results/{job_id}` - Get simulation results
 - `GET /api/v1/simulation/history` - List all jobs
 
-## 🎓 Simulation Methods Details
+## Simulation Methods Details
 
 ### VQE (Variational Quantum Eigensolver)
 VQE is a hybrid quantum-classical algorithm that:
@@ -264,7 +264,7 @@ SQD improves VQE accuracy by:
 
 **Use Cases**: Molecules requiring high accuracy, available quantum hardware
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these guidelines:
 1. Fork the repository
@@ -273,50 +273,36 @@ Contributions are welcome! Please follow these guidelines:
 4. Ensure all tests pass
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👤 Author
+## Author
 
 **Callum Follett**
 - Email: callum.follett@ucalgary.ca
 - Institution: University of Calgary
 
-## 🙏 Acknowledgments
-
-- PennyLane team for quantum machine learning framework
-- Qiskit team for quantum computing toolkit
-- IBM Quantum for hardware access
-- OpenFermion for quantum chemistry utilities
-
-## 📖 References
+## References
 
 - [PennyLane Documentation](https://docs.pennylane.ai/)
 - [Qiskit Documentation](https://qiskit.org/documentation/)
 - [VQE Algorithm Paper](https://arxiv.org/abs/1304.3061)
 - [SQD Algorithm](https://arxiv.org/abs/2104.06314)
 
-## 🐛 Known Issues
+## Known Issues
 
 - Large molecules (>12 qubits) may require significant computation time
 - IBM Quantum API rate limits apply for hardware execution
 - SQD requires stable internet connection for IBM backend
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] Add more molecular presets
 - [ ] Implement excited state calculations
-- [ ] Support for periodic systems
 - [ ] Export results to multiple formats
 - [ ] Integration with molecular visualization tools
 - [ ] Batch job submission
 - [ ] User authentication and job history
 - [ ] Cloud deployment configuration
 
-## 💬 Support
-
-For questions, issues, or suggestions:
-1. Open an issue on GitHub
-2. Contact the author via email
-3. Check the documentation in the `/docs` directory (if available)

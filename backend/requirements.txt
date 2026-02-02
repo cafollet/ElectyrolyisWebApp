@@ -1,0 +1,38 @@
+# Flask and extensions
+Flask>=3.0.0
+Flask-CORS>=4.0.0
+Flask-SocketIO>=5.3.6
+flask-restx>=1.3.0
+
+# Validation and serialization
+marshmallow>=3.20.1
+python-dotenv>=1.0.0
+
+# Task queue
+celery[redis]>=5.3.4
+redis>=5.0.1
+
+# Database
+Flask-SQLAlchemy>=3.1.1
+SQLAlchemy>=2.0.31
+
+# Quantum chemistry dependencies - UPDATED VERSIONS
+pennylane>=0.38.0
+autoray>=0.7.0
+pyscf>=2.4.0
+jax[cpu]>=0.4.30
+jaxlib>=0.4.30
+optax>=0.2.0
+qiskit>=1.0.0
+qiskit-aer>=0.14.0
+qiskit-ibm-runtime>=0.20.0
+ffsim>=0.0.35
+qiskit-addon-sqd>=0.6.0
+
+# Testing
+pytest>=7.4.3
+pytest-flask>=1.3.0
+
+# Production server
+gunicorn>=21.2.0
+eventlet>=0.35.0
